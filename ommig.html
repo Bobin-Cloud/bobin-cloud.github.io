@@ -4,74 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Om mig – Bobin Lilja</title>
-  <!-- Poppins font for modern look -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; padding:0; font-family:'Poppins',sans-serif; background:#f5f5f5; color:#333; line-height:1.4; }
-    header { position:relative; padding:0; margin:0; background:none; }
-    header .logo img { width:100%; height:211px; object-fit:cover; display:block; }
-    header .language-switch { position:absolute; top:10px; right:20px; display:flex; flex-direction:column; align-items:flex-end; z-index:10; }
-    header .language-switch a { text-decoration:none; color:#fff; font-size:1rem; margin:4px 0; background:rgba(0,0,0,0.4); padding:4px 8px; border-radius:4px; text-shadow:0 0 2px rgba(0,0,0,0.8); }
-    
-    
-    nav { position:relative; background:#fff; padding:1rem; display:flex; justify-content:center; gap:2rem; border-top:2px solid #ddd; border-bottom:2px solid #ddd; z-index:1; }
-    nav a { text-decoration:none; color:#333; font-weight:500; font-size:1rem; }
-    .wrapper { position:relative; width:100%; max-width:900px; margin:2rem auto; padding:1rem; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-    #om-mig { padding:2rem; margin-top:1rem; background:#fafafa; border-radius:6px; }
-    #om-mig h1 { font-size:2.5rem; margin-bottom:1rem; text-align:center; }
-    .about-grid { display:grid; grid-template-columns:1fr 2fr; gap:1.5rem; align-items:start; }
-    .about-photo img { width:100%; border-radius:8px; object-fit:cover; }
-    .about-content p { margin-bottom:0.75rem; }
-    footer { text-align:center; padding:1rem; font-size:0.9rem; background:#eaeaea; border-top:1px solid #ccc; margin-top:2rem; }
-    @media(max-width:768px){ .profile-container{position:relative;top:0;right:0;width:150px;margin:0 auto;margin-top:-75px;} .about-grid{grid-template-columns:1fr;} }
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; line-height: 1.4; font-size: 10px; }
+    .wrapper { width: 100%; }
+    header .logo img { width: 100%; height: 211px; object-fit: cover; }
+    .language-switch { position: absolute; top: 10px; right: 20px; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+    .language-switch a { color: #fff; background: rgba(0,0,0,0.4); padding: 4px 8px; border-radius: 4px; }
+    nav { background-color: #ffffff; padding: 1rem; display: flex; justify-content: center; gap: 2rem; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; }
+    nav a { text-decoration: none; color: #333; font-weight: 500; font-size: 10px; }
+    .profile-container { position: absolute; top: 90px; right: 0; width: 300px; z-index: 100; }
+    .profile-img { width: 100%; height: auto; }
+    .intro { margin-right: 320px; padding: 2rem; background-color: #ffffff; }
+    .intro h1 { font-size: 1.5rem; text-align: left; margin-bottom: 1rem; }
+    .about-content p { margin-bottom: 1rem; font-size: 10px; }
+    footer { text-align: center; padding: 1rem; font-size: 9px; background-color: #eaeaea; border-top: 1px solid #ccc; }
+    @media(max-width:768px) {
+      .profile-container { position: relative; top: 0; right: 0; width: 150px; margin: 0 auto; }
+      .intro { margin-right: 0; }
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <header>
       <div class="logo">
-        <img src="C:\\Users\\Bobin\\Desktop\\Hemsida\\bobin logo.png" alt="Bobin logo">
+        <img src="logo/bobin logo.png" alt="Bobin logo">
       </div>
       <div class="language-switch">
-        <a href="index.html"><img src="C:\\Users\\Bobin\\Desktop\\Hemsida\\flagsse.png" alt="Svensk flagga" style="width:24px;vertical-align:middle;margin-right:4px;"> Svenska</a>
-        <a href="index_en.html"><img src="C:\\Users\\Bobin\\Desktop\\Hemsida\\flagsen.png" alt="Engelsk flagga" style="width:24px;vertical-align:middle;margin-right:4px;"> English</a>
+        <a href="index.html"><img src="flags/se.png" alt="Svenska flagga" style="width:24px;vertical-align:middle;margin-right:4px;"> Svenska</a>
+        <a href="indexeng.html"><img src="flags/en.png" alt="Engelsk flagga" style="width:24px;vertical-align:middle;margin-right:4px;"> English</a>
       </div>
     </header>
-    
+
     <nav>
-      <a href="index.html#om-mig">Om mig</a>
-      <a href="index.html#cv">CV</a>
-      <a href="index.html#galleri">Galleri</a>
-      <a href="index.html#blogg">Blogg</a>
-      <a href="index.html#kontakt">Kontakt</a>
+      <a href="index.html">Hem</a>
+      <a href="cvse.html">CV</a>
+      <a href="ommig.html">Om mig</a>
+      <a href="blogg/blogg.html">Blogg</a>
+      <a href="galleri.html">Galleri</a>
+      <a href="projekt.html">Projekt</a>
+      <a href="lankar.html">Länkar</a>
+      <a href="kontakt.html">Kontakt</a>
     </nav>
-    <section id="om-mig">
+
+    <div class="profile-container">
+      <img class="profile-img" src="indexbild/indexbild.png" alt="Bobin">
+    </div>
+
+    <section class="intro">
       <h1>Om mig</h1>
-      <div class="about-grid">
-        <div class="about-photo">
-          <img src="C:\\Users\\Bobin\\Desktop\\Hemsida\\indexbild.png" alt="Bobin">
-        </div>
-        <div class="about-content">
-          <p>Hej och varmt välkommen! Jag heter <strong>Bobin Lilja</strong> och min passion för teknik har följt mig sedan den dag jag började arbeta som supporttekniker 2016. Snart gavs jag ansvar för 300 användare på WTW, vilket blev en ögonöppnare i hur man bygger robusta IT-tjänster som verkligen gör skillnad.</p>
-
-          <p>Under åren har jag axlat roller som IT-tekniker och systemadministratör, med fokus på Microsoft 365 och molnbaserade lösningar. I konsultuppdrag har jag ofta ”hankat mig fram” med PowerShell och Power Automate, alltid med målet att optimera processer och underlätta vardagen för användarna.</p>
-
-          <p>Vid sidan om mitt ordinarie arbete har jag engagerat mig ideellt i Stockholm Pride. Att planera säkerhet och lösa oförutsedda situationer tillsammans med volontärer lärde mig vikten av tydlig kommunikation och modet att fatta snabba beslut under press.</p>
-
-          <p>Utanför teknologins värld värdesätter jag frihet och balans högt. Jag har B‑körkort för automatväxlad bil och njuter av långa roadtrips medan jag förlorar mig i ljudböcker eller musik. Mina fritidsprojekt är helst helt utan skärmar – istället roar jag mig med gaming, att skapa outfits och att bära min signaturhatt.</p>
-
-          <p>På en mer personlig nivå är jag en stolt transkvinna, pansexuell och lever polyamoriskt med ärlighet och respekt som ledstjärnor.</p>
-
-          <p>Som förespråkare för HBTQ+-rättigheter har jag föreläst om inkludering på tech-företag och i forum, där jag gärna diskuterar samhällsfrågor. Jag trivs i miljöer där mångfald är en styrka och ser teknik som en plattform för mänsklig utveckling.</p>
-
-          <p>Min arbetsfilosofi bygger på kontinuerligt lärande, aktiv lyssning och ständig förbättring. Jag ser varje utmaning som en möjlighet att växa, och jag anpassar lösningar efter människor och organisationers unika behov – alltid med användarupplevelsen i fokus.</p>
-
-          <p>Jag är flytande i svenska och engelska, delar gärna erfarenheter i interna workshops och dokumenterar processer noggrant för att skapa långsiktig stabilitet. Jag ser fram emot nya samarbeten där vi tillsammans formar hållbara och inkluderande IT-miljöer.</p>
-
-          <p>Tack för att du tog dig tid att lära känna mig – hör gärna av dig om du vill veta mer eller diskutera hur vi kan jobba tillsammans. 👋</p>
-        </div>
+      <div class="about-content">
+        <p>Jag heter Bobin Lilja, systemadministratör och Microsoft 365-specialist med en passion för inkluderande IT‑lösningar. Sen 2016 har jag arbetat med support, drift och molntjänster – alltid med användarupplevelsen i fokus. Jag växte upp i en utmanande miljö där få trodde på mina ambitioner, men med envishet och hårt arbete bevisade jag att det går att nå långt.</p>
+        
+        <p>Under min karriär har jag implementerat Intune-lösningar, konfigurerat Power Automate-flöden och byggt upp interna servicefunktioner från grunden. Jag har erfarenhet av att driva projekt i tvärfunktionella team och vet hur man skapar tydliga processer för att hålla hög kvalitet.</p>
+        
+        <p>Som transkvinna har jag förstått värdet av representation och arbetar aktivt för att öka inkluderingen i teknikbranschen. Jag lever öppet som pansexuell och polyamoriös, med ärlighet som grund i alla mina relationer. ADHD har lärt mig att effektivisera arbetssätt, och jag använder digitala verktyg för att strukturera både arbetsdag och fritid.</p>
+        
+        <p>På min fritid roar jag mig med single player gaming, testar företags IT och skapar outfits. Jag älskar också långa road trips i min bil medan jag lyssnar på ljudböcker eller min favoritmusik. Min signatur är min hatt, som tillsammans med en unik stil utgör en stor del av min person och skapar bestående intryck.</p>
+        
+        <p>Jag engagerar mig ideellt i Stockholm Pride, där jag koordinerat säkerhets- och teknikteam under flera år. Som föreläsare diskuterar jag gärna HBTQ+-rättigheter, mångfald och teknikens roll i samhällsutvecklingen, och jag har även föreläst internt för företag om inkludering.</p>
+        
+        <p>Min arbetsfilosofi bygger på ständig förbättring, öppet samarbete och aktivt lyssnande. Jag tror på att bygga broar mellan IT och andra discipliner som HR för att skapa helhetslösningar, och samhällsfrågor och politik intresserar mig för att jag ska kunna bidra till positiva förändringar.</p>
+        
+        <p>Jag har erfarenhet av att utveckla policys för användarsupport och dokumentera processer för långsiktig stabilitet. Jag har en TikTok-kanal där jag pratar om att vara trans och inkludering, och jag delar även insikter på LinkedIn. Jag bidrar gärna i interna nätverk och diskussionsgrupper för att dela erfarenheter och lära av andra.</p>
+        
+        <p>Jag undervisar i workshops om Microsoft 365, teknik och inkludering för kollegor och slutkunder. Jag investerar kontinuerligt i min kompetens genom kurser och hemma-labb.</p>
+        
+        <p>Privat trivs jag bäst i lugna stunder hemma med familjen eller med ett gott samtal över en kopp kaffe. Min partner och jag håller just nu på att utforska Göteborg och hitta nya favoritställen tillsammans.</p>
+        
+        <p>Jag är stolt över att ha föreläst på konferenser om teknik, mångfald och personlig resa. Min framtidsvision är att driva projekt som kombinerar teknik, hållbarhet och inkludering i samhället.</p>
+        
+        <p>Om du vill diskutera samarbeten, idéer eller bara prata IT och livet—ta kontakt så tar vi en fika och pratar vidare!</p>
       </div>
     </section>
+
+    <footer>
+      Den här sidan är skapad med GitHub Pages och ChatGPT
+    </footer>
   </div>
 </body>
 </html>
