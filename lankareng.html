@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bobin Lilja - Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      text-align: left;
+      font-size: 16px;
+    }
+    .wrapper {
+      width: 100%;
+    }
+    header {
+      background: none;
+      position: relative;
+    }
+    header .logo img {
+      width: 100%;
+      height: 211px;
+      object-fit: cover;
+      display: block;
+    }
+    .language-switch {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 10;
+    }
+    .language-switch a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      margin: 2px 0;
+      background: rgba(0,0,0,0.4);
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-shadow: 0 0 2px rgba(0,0,0,0.8);
+    }
+    .profile-container {
+      position: absolute;
+      top: 90px;
+      right: 0;
+      width: 300px;
+      z-index: 100;
+    }
+    .profile-img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    nav {
+      background-color: #ffffff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      border-top: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+      z-index: 1;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .links-section {
+      padding: 2rem;
+      background-color: #ffffff;
+      margin: 1rem;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .links-section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .links-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .links-section ul li {
+      margin-bottom: 0.75rem;
+    }
+    .links-section ul li a {
+      text-decoration: none;
+      color: #0078d4;
+    }
+    .links-section ul li a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #eaeaea;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="logo/bobin logo.png" alt="Bobin logo">
+      </div>
+      <div class="language-switch">
+        <a href="lankar.html"><img src="flags/se.png" alt="Swedish flag" style="width:24px;vertical-align:middle;margin-right:4px;"> Svenska</a>
+        <a href="lankareng.html"><img src="flags/en.png" alt="English flag" style="width:24px;vertical-align:middle;margin-right:4px;"> English</a>
+      </div>
+    </header>
+
+    <div class="profile-container">
+      <img class="profile-img" src="indexbild/indexbild.png" alt="Bobin">
+    </div>
+
+    <nav>
+      <a href="indexeng.html">Home</a>
+      <a href="cveng.html">CV</a>
+      <a href="ommigeng.html">About Me</a>
+      <a href="gallerieng.html">Gallery</a>
+      <a href="lankareng.html">Links</a>
+      <a href="contacteng.html">Contact</a>
+    </nav>
+
+    <main>
+      <section id="sociala-medier" class="links-section">
+        <h2>Social media</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/bobinlilja/">Bobin Lilja - LinkedIn</a></li>
+          <li><a href="https://www.tiktok.com/@tantmedhatt">TantmedHatt - TikTok</a></li>
+          <li><a href="https://open.spotify.com/user/eldrood?si=097f7fd65ceb4613">Spotify Profile</a></li>
+          <li><a href="https://learn.microsoft.com/en-us/users/robinlilja-2795/">Microsoft Learn</a></li>
+        </ul>
+      </section>
+
+      <section id="bloggar-microsoft365" class="links-section">
+        <h2>Recommended Microsoft 365 Blogs</h2>
+        <ul>
+          <li><a href="https://practical365.com/blog/">Practical 365</a></li>
+          <li><a href="https://sharepointmaven.com/blog-sharepoint-best-practices/">SharePoint Maven</a></li>
+          <li><a href="https://www.roadmapwatch.com/feature/browse">RoadMapWatcher</a></li>
+          <li><a href="https://danielchronlund.com/">Daniel Chronlund for security</a></li>
+          <li><a href="https://lazyadmin.nl/">Lazyadmin</a></li>
+          <li><a href="https://www.jasperoosterveld.com/">Jasper Oosterveld</a></li>
+        </ul>
+      </section>
+
+      <section id="sysadmin-bloggar" class="links-section">
+        <h2>Sys Admin Blogs</h2>
+        <ul>
+          <li><a href="https://4sysops.com/archives/">4sysops</a></li>
+          <li><a href="https://adamtheautomator.com/">Adam the Automator</a></li>
+          <li><a href="https://petri.com/">Petri</a></li>
+          <li><a href="https://www.itbrew.com/">IT Brew</a></li>
+        </ul>
+      </section>
+
+      <section id="microsoft-admin-urls" class="links-section">
+        <h2>Microsoft admin URLs</h2>
+        <ul>
+          <li><a href="https://admin.microsoft.com/AdminPortal/Home">Microsoft 365 Admin Center</a></li>
+          <li><a href="https://admin.exchange.microsoft.com">Exchange Admin Center</a></li>
+          <li><a href="https://aka.ms/MSEntraPortal">Microsoft Entra ID</a></li>
+          <li><a href="https://admin.microsoft.com/sharepoint">SharePoint Online Admin Center</a></li>
+          <li><a href="https://admin.teams.microsoft.com">Teams Admin Center</a></li>
+          <li><a href="https://portal.azure.com">Azure Portal</a></li>
+          <li><a href="https://intune.microsoft.com/">Microsoft Intune Admin Center</a></li>
+          <li><a href="https://config.office.com">Microsoft 365 Apps Admin Center</a></li>
+          <li><a href="https://security.microsoft.com">Microsoft Defender XDR</a></li>
+          <li><a href="https://connectivity.office.com">Microsoft 365 Network Connectivity test</a></li>
+          <li><a href="https://portal.office.com/adminportal/home#/servicehealth">Microsoft 365 Status</a></li>
+          <li><a href="https://compliance.microsoft.com/homepage">Microsoft Purview Compliance Portal</a></li>
+          <li><a href="https://microsoft.com/wdsi">Microsoft Security Intelligence portal</a></li>
+          <li><a href="https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade">Microsoft Sentinel</a></li>
+          <li><a href="https://account.activedirectory.windowsazure.com/usermanagement/multifactorverification.aspx">Multi-Factor Authentication Admin Portal</a></li>
+          <li><a href="https://app.powerbi.com/admin-portal/tenantSettings?experience=power-bi">Power BI admin portal</a></li>
+          <li><a href="https://cqd.teams.microsoft.com/">Teams call quality dashboard</a></li>
+          <li><a href="https://www.yammer.com/office365/admin">Viva Engage Admin Center</a></li>
+          <li><a href="https://admin.powerplatform.microsoft.com/">Power Platform Admin Center</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      This page was created with GitHub Pages and ChatGPT
+    </footer>
+  </div>
+</body>
+</html>
