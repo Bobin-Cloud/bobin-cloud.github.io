@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Bobin Lilja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Gemensam styling – kopierad och uppdaterad från index.html */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    header {
+      padding: 0;
+      margin: 0;
+      background: none;
+      z-index: 1;
+    }
+    header .logo img {
+      width: 100%;
+      height: 211px;
+      object-fit: cover;
+      display: block;
+    }
+    header .language-switch {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: 10;
+    }
+    header .language-switch a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      margin: 2px 0;
+      background: rgba(0,0,0,0.4);
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-shadow: 0 0 2px rgba(0,0,0,0.8);
+    }
+    .profile-container {
+      position: absolute;
+      top: 90px;
+      right: 0;
+      width: 300px;
+      z-index: 100;
+    }
+    .profile-img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    nav {
+      background-color: #ffffff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      border-top: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+      z-index: 1;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .intro {
+      flex: 1;
+      margin-right: 320px;
+      padding: 2rem;
+      padding-top: 3rem;
+      background-color: #ffffff;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #eaeaea;
+      border-top: 1px solid #ccc;
+    }
+    @media (max-width: 768px) {
+      .profile-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: -75px;
+      }
+      .intro {
+        margin-right: 0;
+        padding-top: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img src="logo/bobin logo.png" alt="Bobin logo">
+      </div>
+      <div class="language-switch">
+        <a href="index.html"><img src="flags/se.png" alt="Svenska flagga" style="width:24px;vertical-align:middle;margin-right:4px;"> Svenska</a>
+        <a href="indexeng.html"><img src="flags/en.png" alt="Engelsk flagga" style="width:24px;vertical-align:middle;margin-right:4px;"> English</a>
+      </div>
+    </header>
+
+    <div class="profile-container">
+      <img class="profile-img" src="indexbild/indexbild.png" alt="Profilbild Bobin">
+    </div>
+
+    <nav>
+      <a href="index.html">Hem</a>
+      <a href="cvse.html">CV</a>
+      <a href="ommig.html">Om mig</a>
+      <a href="galleri.html">Galleri</a>
+      <a href="lankar.html">Länkar</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <section id="kontakt" class="intro">
+      <h2>Kontakt</h2>
+      <p>Om du vill komma i kontakt med mig så kan du:</p>
+      <p>Maila mig på <a href="mailto:bobin@bobin.se">bobin@bobin.se</a></p>
+      <p><a href="https://www.linkedin.com/in/bobinlilja/" target="_blank" rel="noopener">DMA mig på LinkedIn</a></p>
+    </section>
+
+    <footer>
+      Den här sidan är skapad med GitHub Pages och ChatGPT
+    </footer>
+  </div>
+</body>
+</html>
